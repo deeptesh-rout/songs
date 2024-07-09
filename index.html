@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fluted Navbar | Cubiq</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Zeyada&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <div class="wrapper">
+    <img class="preview" src="https://i.imgur.com/389Tx9h.png" alt=""/>
+    <iframe src="https://cloudkid.com/all-releases" frameborder="0"></iframe>
+  </div>
+  <nav>
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <use href="#tabler--archive" />
+      </svg></a>
+    <a href="#" class="highlight">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <use href="#tabler--search" />
+      </svg>
+    </a>
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <use href="#tabler--send" />
+      </svg></a>
+  </nav>
+</main>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" color-interpolation-filters="sRGB">
+  <!--
+    ------
+   🎹 Fluted
+    ------
+  -->
+
+  <filter id="fluted" primitiveUnits="objectBoundingBox">
+    <feImage x="0" y="0" in="blur_0" result="image_0" crossorigin="anonymous" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' color-interpolation-filters='sRGB'>
+        <g>
+          <rect width='1' height='1' fill='black' />
+          <rect width='1' height='1' fill='url(%23red)' style='mix-blend-mode:screen' />
+          <rect width='1' height='1' fill='url(%23green)' style='mix-blend-mode:screen' />
+          <rect width='1' height='1' fill='url(%23yellow)' style='mix-blend-mode:screen' />
+        </g>
+        <defs>
+          <radialGradient id='yellow' cx='0' cy='0' r='1' >
+            <stop stop-color='yellow' />
+            <stop stop-color='yellow' offset='1' stop-opacity='0' />
+          </radialGradient>
+          <radialGradient id='green' cx='1' cy='0' r='1' >
+            <stop stop-color='green' />
+            <stop stop-color='green' offset='1' stop-opacity='0' />
+          </radialGradient>
+          <radialGradient id='red' cx='0' cy='1' r='1' >
+            <stop stop-color='red' />
+            <stop stop-color='red' offset='1' stop-opacity='0' />
+          </radialGradient>
+        </defs>
+      </svg>" preserveAspectRatio="none meet" width=".03" height="1" />
+    <feTile in="image_0" result="tile_0" />
+    <feGaussianBlur stdDeviation=".003" edgeMode="none" in="tile_0" result="bar_smoothness" x="0" y="0" />
+    <!--       <feGaussianBlur stdDeviation=".03" edgeMode="none" in="SourceGraphic" result="blur_glass" /> -->
+    <feDisplacementMap scale=".08" xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="bar_smoothness" result="displacement_0" />
+  </filter>
+
+  <symbol id="tabler--send" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z" />
+  </symbol>
+
+  <symbol id="tabler--search" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6" />
+  </symbol>
+
+  <symbol id="tabler--archive" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2m2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8m-9 4h4" />
+  </symbol>
+</svg>
+<!-- partial -->
+  
+</body>
+</html>
